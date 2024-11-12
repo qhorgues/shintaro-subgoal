@@ -1,15 +1,12 @@
 import './App.css';
 import { Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
-{/* import Navbar from './Navbar'; */}
+
 function App() {
   return (
-    <>
-      {/*<Navbar />*/}
-      <Routes>
-        <Route path="/" element={Home} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/shintaro-subgoal/" element={<Home/>} />
+    </Routes>
   );
 }
 export default App;
