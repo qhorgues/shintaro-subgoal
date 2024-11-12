@@ -1,14 +1,15 @@
 import './App.css';
-
+import { Routes, Route} from "react-router-dom";
+import Home from "./pages/Home";
+{/* import Navbar from './Navbar'; */}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="donation-goal.png" width={"100%"} alt="La liste des sub goal">
-        </img>
-      </header>
-    </div>
+    <>
+      {/*<Navbar />*/}
+      <Routes>
+        <Route path="/" element={Home} />
+      </Routes>
+    </>
   );
 }
-
 export default App;
