@@ -4,7 +4,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src="donation-goal.png" width={"100%"}></img>
+        <img src="donation-goal.png" width={"100%"} alt="La liste des sub goal">
+        </img>
       </header>
     </div>
   );
