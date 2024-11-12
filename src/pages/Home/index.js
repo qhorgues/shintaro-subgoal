@@ -1,25 +1,27 @@
-import React, { useEffect } from 'react';
-import { FireTVKeyEvent } from 'react-native-fire-tv-keyevent';
+import React from 'react';
+import SubGoal from '../../components/SubGoal';
+
+
+const Goal = [
+    {
+        amount: "1€",
+        subgoal: "J'allume mon micro"
+    },
+    {
+        amount: "5€",
+        subgoal: "J'allume ma caméra"
+    }
+  ];
 
 const Home = () => {
-    useEffect(() => {
-        const handleKeyEvent = (event) => {
-            if (event.keyCode === FireTVKeyEvent.KEYCODE_DPAD_CENTER) {
-                alert('Bonjour');
-            }
-        };
-
-        FireTVKeyEvent.addListener(handleKeyEvent);
-
-        return () => {
-            FireTVKeyEvent.removeListener(handleKeyEvent);
-        };
-    }, []);
-
   return (
-    <div>
-      <h1>Appuyez sur "Entrée" pour afficher un message</h1>
-    </div>
+    <article>  {/*className="list_content margin-top--lg"*/}
+      <section> {/* className="list-item row" */}
+        {Goal.map((props, idx) => (
+          <SubGoal key={idx} {...props} />
+        ))}
+      </section>
+    </article>
   );
 };
 
