@@ -20,11 +20,11 @@ function ClickElem({children}) {
     );
 };
 
-export default function SubGoal({amount, subgoal}) {
+export default function SubGoal({goal}) {
     
     return (
         <ClickElem>
-            <b>{amount}</b> : {subgoal}
+            key {255 * (goal.index/goal.total)} : <b>{goal.amount}</b> : {goal.subgoal}
         </ClickElem>
     );
 }

@@ -18,7 +18,7 @@ const Home = () => {
     <article>  {/*className="list_content margin-top--lg"*/}
       <section> {/* className="list-item row" */}
         {Goal.map((props, idx) => (
-          <SubGoal key={idx} {...props} />
+          <SubGoal key={idx} goal={{...props, index: idx, total: Goal.length}} />
         ))}
       </section>
     </article>
