@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/shintaro-subgoal/static/css/main.f855e6bc.css",
-    "main.js": "/shintaro-subgoal/static/js/main.83b39631.js",
+    "main.css": "/shintaro-subgoal/static/css/main.cfb6206f.css",
+    "main.js": "/shintaro-subgoal/static/js/main.b4275d72.js",
     "static/js/453.21f12032.chunk.js": "/shintaro-subgoal/static/js/453.21f12032.chunk.js",
+    "static/media/background.jpg": "/shintaro-subgoal/static/media/background.fea393c8742a2a797154.jpg",
     "index.html": "/shintaro-subgoal/index.html",
-    "main.f855e6bc.css.map": "/shintaro-subgoal/static/css/main.f855e6bc.css.map",
-    "main.83b39631.js.map": "/shintaro-subgoal/static/js/main.83b39631.js.map",
+    "main.cfb6206f.css.map": "/shintaro-subgoal/static/css/main.cfb6206f.css.map",
+    "main.b4275d72.js.map": "/shintaro-subgoal/static/js/main.b4275d72.js.map",
     "453.21f12032.chunk.js.map": "/shintaro-subgoal/static/js/453.21f12032.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.83b39631.js"
+    "static/css/main.cfb6206f.css",
+    "static/js/main.b4275d72.js"
   ]
 }
