@@ -1,0 +1,41 @@
+/* src/components/Goal.css */
+
+.goal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: -0.95vh 0; /* Réduire davantage l'interligne */
+    font-size: 1.85vw;
+    cursor: pointer; /* Indicateur de cliquabilité */
+    position: relative; /* Position relative pour ajouter la barre */
+    transition: color 1s, text-decoration-color 1s; /* Animation de la couleur et de la ligne barrée */
+}
+
+.goal-amount {
+    font-weight: 800; /* Texte en gras épais pour les montants */
+    color: inherit; /* Utiliser la couleur héritée */
+    width: 10vw; /* Largeur fixe proportionnelle pour aligner les montants */
+    text-align: right; /* Alignement à droite pour les montants */
+    margin-right: 5vw; /* Ajouter de l'espace entre le goal et le montant */
+}
+
+.goal-name {
+    color: white; /* Texte en blanc pour les noms */
+    text-align: left; /* Alignement à gauche pour les sub goals */
+    text-decoration: none; /* Aucun texte barré par défaut */
+    position: relative; /* Position relative pour ajouter la barre */
+}
+
+.goal.completed .goal-name::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* Assurer que la barre prenne toute la largeur de la ligne */
+    height: 3px; /* Épaisseur de la barre */
+    background: currentColor; /* Utiliser la couleur courante */
+    top: 50%; /* Position verticale */
+    left: 0;
+}
+
+.goal.completed .goal-amount {
+    color: inherit; /* Conserver la couleur du montant */
+}

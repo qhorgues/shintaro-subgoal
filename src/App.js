@@ -1,12 +1,13 @@
+import React from 'react';
+import GoalList from './components/GoalList';
 import './App.css';
-import { Routes, Route} from "react-router-dom";
-import Home from "./pages/Home";
 
-function App() {
-  return (
-    <Routes>
-      <Route path="/shintaro-subgoal/" element={<Home/>} />
-    </Routes>
-  );
-}
+const App = () => {
+    return (
+        <div className="app-background">
+            <GoalList />
+        </div>
+    );
+};
+
 export default App;

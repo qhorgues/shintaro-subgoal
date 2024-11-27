@@ -3,7 +3,7 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "donation-goal.png",
+      "src": "favicon.ico",
       "sizes": "1920x1080",
       "type": "image/x-icon"
     }
